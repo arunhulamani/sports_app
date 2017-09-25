@@ -1,0 +1,68 @@
+{
+  "sports_type":[
+    {
+    	"name": "cricket",
+    	"type": "athletic",
+    	"players": 11,
+    	"duration": "480 mins",
+    	"equipmentsRequired": true,
+    	"mainBody": "ICC"
+    },
+    {
+    	"name": "football",
+    	"type": "athletic",
+    	"players": 10,
+    	"duration": "90 mins",
+    	"equipmentsRequired": true,
+    	"mainBody": "IFF"
+    },
+    {
+    	"name": "Hockey",
+    	"type": "athletic",
+    	"players": 11,
+    	"duration": "90 mins",
+    	"equipmentsRequired": true,
+    	"mainBody": "IHF"
+    },
+    {
+    	"name": "Golf",
+    	"type": "athletic",
+    	"players": 1,
+    	"duration": "240 mins",
+    	"equipmentsRequired": true,
+    	"mainBody": "IGF"
+    },
+    {
+    	"name": "Tennis",
+    	"type": "athletic",
+    	"players": 1,
+    	"duration": "90 mins",
+    	"equipmentsRequired": true,
+    	"mainBody": "ITF"
+    },
+    {
+    	"name": "Boxing",
+    	"type": "athletic",
+    	"players": 1,
+    	"duration": "60 mins",
+    	"equipmentsRequired": true,
+    	"mainBody": "IBF"
+    },
+    {
+    	"name": "Running",
+    	"type": "athletic",
+    	"players": 1,
+    	"duration": "10 mins",
+    	"equipmentsRequired": false,
+    	"mainBody": "IOF"
+    },
+    {
+    	"name": "Swimming",
+    	"type": "swimming",
+    	"players": 1,
+    	"duration": "30 mins",
+    	"equipmentsRequired": false,
+    	"mainBody": "IOF"
+    }
+  ]
+}
