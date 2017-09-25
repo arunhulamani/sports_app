@@ -21,7 +21,13 @@ interface SportsResponse {
 export class TeamComponent implements OnInit {
   constructor(private http: HttpClient, private teamService: TeamService) {}
    teams = [];
+   newMatches = [];
+
   ngOnInit() {
-     this.teamService.getTeam().subscribe(responseTeam => this.teams = responseTeam);
+      this.teamService.getTeam().subscribe(responseTeam => this.teams = responseTeam);
+    }
+
+  getMoreInfo() {
+      this.teamService.getNewMatches().subscribe(responseTeam => this.newMatches = responseTeam);
     }
 }

@@ -14,4 +14,7 @@ export class TeamService {
     return this.http.get('./../assets/sports.json').map((response: Response) => response.json());
   }
 
+  getNewMatches() {
+    return this.http.get('./../assets/new_matches.json').map((response: Response) => response.json());
+  }
 }
