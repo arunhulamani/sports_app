@@ -1,5 +1,5 @@
 <div class="team-container">
-  <div class="team fade color grow" *ngFor = "let team of teams" (click)="getMoreInfo()">
+  <div class="team fade color grow" *ngFor = "let team of teams" (click)="getMoreInfo(team.name)">
       <h1>{{team.name}}</h1>
       <span class="list">Team name: {{team.name}}</span>
       <span>Team type: {{team.type}}</span>
@@ -19,10 +19,12 @@
 </div>-->
 
 <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-<div class="" >
-  <div class="gradientBoxesWithOuterShadows" *ngFor = "let match of newMatches">
+<div class="" *ngIf="newMatches !== ''">
+  <div class="gradientBoxesWithOuterShadows"  *ngFor = "let match of newMatches">
     <span>1st Team: {{match.first}}</span>
     <span>2nd Team: {{match.second}}</span>
     <span>Date and time: {{match.date}}</span>
   </div>
 </div>
+
+<div class='no-data' *ngIf="newMatches === null">No data available...!</div>

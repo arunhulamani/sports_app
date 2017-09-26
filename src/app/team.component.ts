@@ -27,7 +27,11 @@ export class TeamComponent implements OnInit {
       this.teamService.getTeam().subscribe(responseTeam => this.teams = responseTeam);
     }
 
-  getMoreInfo() {
-      this.teamService.getNewMatches().subscribe(responseTeam => this.newMatches = responseTeam);
+  getMoreInfo(gameName) {
+      if (gameName === 'cricket') {
+        this.teamService.getNewMatches().subscribe(responseTeam => this.newMatches = responseTeam);
+      } else {
+        return this.newMatches = null;
+      }
     }
 }
