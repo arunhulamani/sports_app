@@ -63,3 +63,11 @@ background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
   font-size: 24px;
   color: red;
 }
+
+
+/*match container*/
+.match-container {
+    display: flex;
+    flex-flow: wrap;
+    margin: 100px;
+}

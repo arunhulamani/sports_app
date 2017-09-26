@@ -11,7 +11,7 @@
 
 
 <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-<div class="" *ngIf="newMatches !== ''">
+<div class="match-container" *ngIf="newMatches !== ''">
   <div class="gradientBoxesWithOuterShadows"  *ngFor = "let match of newMatches">
     <h2>{{match.first}} Vs {{match.second}}</h2>
     <span>1st Team: {{match.first}}</span>
