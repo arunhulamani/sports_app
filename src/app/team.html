@@ -9,21 +9,14 @@
   </div>
 </div>
 
- <!--<div>
-  <ul *ngFor = "let match of newMatches">
-    <li><a href="#">
-      <span>1st Team: {{match.first}}</span>
-      <span>2nd Team: {{match.second}}</span>
-        <img src="http://placehold.it/150x150" /></a></li>
-  </ul>
-</div>-->
 
 <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 <div class="" *ngIf="newMatches !== ''">
   <div class="gradientBoxesWithOuterShadows"  *ngFor = "let match of newMatches">
+    <h2>{{match.first}} Vs {{match.second}}</h2>
     <span>1st Team: {{match.first}}</span>
     <span>2nd Team: {{match.second}}</span>
-    <span>Date and time: {{match.date}}</span>
+    <span>Match Date and time: {{match.date | date}}</span>
   </div>
 </div>
 
