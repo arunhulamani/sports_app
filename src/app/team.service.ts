@@ -11,7 +11,7 @@ export class TeamService {
   constructor(private http: Http) { }
 
   getTeam(): Observable<any> {
-    return this.http.get('./../assets/sports.json').map((response: Response) => response.json());
+    return this.http.get('http://localhost:3000/api/sports').map((response: Response) => response.json());
   }
 
 }
