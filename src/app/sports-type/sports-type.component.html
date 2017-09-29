@@ -1,0 +1,19 @@
+<div class="row team-container">
+  <div class="team fade color grow" *ngFor = "let team of teams">
+      <span class= "thumb-images" *ngIf="team.name == 'Cricket'"><img src="../../assets/images/cricket.jpg" alt="cricket image"></span>
+      <span class= "thumb-images" *ngIf="team.name == 'Football'"><img src="../../assets/images/football.jpg" alt="Football image"></span>
+      <span class= "thumb-images" *ngIf="team.name == 'Hockey'"><img src="../../assets/images/hockey.jpg" alt="Hockey image"></span>
+      <span class= "thumb-images" *ngIf="team.name == 'Golf'"><img src="../../assets/images/golf.jpg" alt="Golf image"></span>
+      <span class= "thumb-images" *ngIf="team.name == 'Tennis'"><img src="../../assets/images/tennis.jpg" alt="Tennis image"></span>
+      <span class= "thumb-images" *ngIf="team.name == 'Boxing'"><img src="../../assets/images/boxing.jpg" alt="Boxing image"></span>
+      <span class= "thumb-images" *ngIf="team.name == 'Running'"><img src="../../assets/images/running.jpg" alt="Running image"></span>
+      <span class= "thumb-images" *ngIf="team.name == 'Swimming'"><img src="../../assets/images/swimming.jpg" alt="Swimming image"></span>
+      <h2>{{team.name | uppercase}}</h2>
+      <span class="list">Team name: {{team.name}}</span>
+      <span>Team type: {{team.type}}</span>
+      <span>Number of players: {{team.players}}</span>
+      <span>Game duration: {{team.duration}}</span>
+      <span>Board: {{team.mainBody}}</span>
+  </div>
+</div>
+  

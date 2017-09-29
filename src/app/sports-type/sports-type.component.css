@@ -1,0 +1,42 @@
+div > .team
+{
+    width:300px;
+    height:auto;
+    background:#000000;
+    transition:all 0.3s ease;
+    padding: 20px;
+    margin: 5px;
+    color: wheat;
+    border-radius: 5px;
+}
+.fade
+{
+        opacity:0.8;
+}
+.fade:hover
+{
+        opacity:1;
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+.team-container
+{
+    display: flex;
+    padding: 30px;
+    margin: 50px;
+    cursor: pointer;
+}
+span{
+  float: left;
+  clear: left;
+}
+
+.thumb-images img{
+    width:260px;
+    height: 200px;
+}
